@@ -1,0 +1,176 @@
+.profile {
+  background-color: #ffffff;
+  /* padding: 2rem; */
+  margin: 4rem;
+  /* margin-left: 23rem; */
+}
+
+.profile__heading {
+  font-size: 1.375rem;
+  color: #037eba;
+  font-weight: 600;
+  margin-bottom: 7rem;
+}
+
+.profile__info-container {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.profile__info-personal {
+  /* border: 1px solid green; */
+  border-radius: 1rem;
+
+  /* min-width: 22.5rem; */
+  min-width: 30%;
+  padding: 3.1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+
+  position: relative;
+}
+
+.profile__user-img-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 8.8rem;
+  height: 8.8rem;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile__user-img {
+  width: 100%;
+}
+
+.profile__user-name {
+  align-self: center;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 2.3rem;
+}
+
+.profile__info-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  color: #037eba;
+}
+
+.profile__info-personal-details {
+  /* border: 1px solid royalblue; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile__info-texts {
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
+
+.profile__info-title {
+  color: #383737;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.profile__info-text {
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: 600;
+  /* border: 1px solid red; */
+}
+.profile__info-others {
+  /* border: 1px solid blue; */
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.profile_info-adddress,
+.profile_info-identity,
+.profile_info-documents {
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.profile__info-address-details,
+.profile__info-identity-details,
+.profile__info-documents-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 2.6rem;
+  column-gap: 3rem;
+  /* justify-content: space-between; */
+}
+
+.profile__info-documents-details {
+  gap: 0.8rem;
+  justify-content: space-between;
+}
+
+.profile__info-address-details > *,
+.profile__info-identity-details > *,
+.profile__info-documents-details > * {
+  /* min-width: 25%; */
+  width: 26%;
+}
+
+.profile__info-documents-details > * {
+  min-width: 30%;
+  /* width: 30%; */
+}
+
+.profile__info-doc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.profile__info-img-container {
+  width: 100%;
+}
+
+.profile__info-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+  .profile__info-address-details > *,
+  .profile__info-identity-details > *,
+  .profile__info-documents-details > * {
+    /* min-width: 45%; */
+    width: 40%;
+  }
+
+  .profile__info-personal-details {
+    gap: 2.6rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .profile__info-address-details > *,
+  .profile__info-identity-details > *,
+  .profile__info-documents-details > * {
+    /* min-width: 45%; */
+    min-width: 80%;
+  }
+}

@@ -1,0 +1,112 @@
+.sim {
+  margin: 1rem;
+  /* margin-left: 23rem; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.sim__active-container {
+  display: flex;
+  gap: 1.93rem;
+}
+
+.sim__active {
+  width: 30%;
+}
+
+.sim__active,
+.sim__type {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1.125rem;
+  border-radius: 1rem;
+}
+
+.sim__active-icon-container,
+.sim__type-icon-container {
+  width: 5.5rem;
+  height: 6.4rem;
+}
+
+.sim__active-icon,
+.sim__type-icon {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.sim__active-texts {
+}
+.sim__active-text {
+  font-size: 1.2rem;
+}
+.sim__active-number {
+  color: #222222;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.sim__types-container {
+  display: flex;
+  gap: 1.93rem;
+}
+.sim__types {
+  display: flex;
+  flex-direction: column;
+  gap: 1.938rem;
+
+  width: 30%;
+}
+.sim__type {
+}
+
+.sim__type-ntc {
+  background-color: #00378f;
+}
+.sim__type-ncell {
+  background-color: #7d0084;
+}
+.sim__type-smart {
+  background-color: #ef3153;
+}
+
+.sim__type-texts {
+  color: #ffffff;
+}
+
+.sim__type-text {
+  font-size: 1.2rem;
+}
+
+.sim__type-number {
+  font-size: 1.875rem;
+
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .sim__active {
+    width: 40%;
+  }
+  .sim__types-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.93rem;
+  }
+  .sim__types {
+    display: flex;
+    flex-direction: row;
+    gap: 1.938rem;
+
+    width: 100%;
+  }
+  .sim__type {
+    width: 40%;
+  }
+}
